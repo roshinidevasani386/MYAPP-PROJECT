@@ -1,0 +1,346 @@
+.loginPage {
+  min-height: 100vh;
+  display: flex;
+  background: #f5f9fc;
+}
+
+.loginImage {
+  width: 30%;
+  min-height: 100vh;
+}
+
+.loginImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.loginForm {
+  width: 70%;
+  max-width: 550px;
+  margin: auto;
+  padding: 40px;
+}
+
+.loginForm h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.inputGroup {
+  margin-bottom: 20px;
+}
+
+.inputGroup label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.inputGroup input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+}
+
+.loginButton {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background: #0077b6;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.forgot {
+  display: block;
+  text-align: right;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.registerText {
+  text-align: center;
+}
+
+.registerText a {
+  text-decoration: none;
+  font-weight: 600;
+}
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+.sidebar {
+  width: 250px;
+  min-height: 100vh;
+  background: #0b3d5c;
+  padding: 25px 15px;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.sidebarLogo {
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.sidebarLogo h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.sidebarLogo p {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.sidebarNav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sidebarNav a {
+  color: white;
+  text-decoration: none;
+  padding: 12px 15px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.sidebarNav a:hover {
+  background: #176b91;
+}
+
+.sidebarNav a.active {
+  background: #176b91;
+  font-weight: 600;
+}
+.dashboardPage {
+  min-height: 100vh;
+  background: #f5f9fc;
+}
+
+.dashboardContent {
+  margin-left: 250px;
+  padding: 40px;
+}
+
+.dashboardHeader {
+  margin-bottom: 35px;
+}
+
+.dashboardHeader h1 {
+  margin-bottom: 10px;
+  color: #0b3d5c;
+}
+
+.dashboardHeader p {
+  color: #666;
+}
+
+.dashboardCards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.dashboardCard {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.dashboardCard h3 {
+  color: #0b3d5c;
+  margin-bottom: 10px;
+}
+
+.dashboardCard p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.dashboardCard a {
+  text-decoration: none;
+  color: #0077b6;
+  font-weight: 600;
+}
+.formCard {
+  max-width: 700px;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.inputGroup {
+  margin-bottom: 20px;
+}
+
+.inputGroup label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.inputGroup input,
+.inputGroup textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  font-size: 15px;
+}
+
+.inputGroup textarea {
+  resize: vertical;
+}
+
+.inputGroup input:focus,
+.inputGroup textarea:focus {
+  border-color: #0077b6;
+}
+.treatmentList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.treatmentCard {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.treatmentCard h3 {
+  color: #0b3d5c;
+  margin-bottom: 10px;
+}
+
+.treatmentCard p {
+  color: #666;
+  line-height: 1.5;
+}
+
+.actionButtons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.editButton,
+.deleteButton,
+.cancelButton {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.editButton {
+  background: #0077b6;
+  color: white;
+}
+
+.deleteButton {
+  background: #dc3545;
+  color: white;
+}
+
+.cancelButton {
+  background: #777;
+  color: white;
+  margin-left: 10px;
+}
+.appointmentList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.appointmentCard {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.appointmentCard h3 {
+  color: #0b3d5c;
+  margin-bottom: 15px;
+}
+
+.appointmentCard p {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.statusGroup {
+  margin-top: 20px;
+}
+
+.statusGroup label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.statusGroup select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+
+
+.loginPage {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  background: #ffffff;
+}
+
+.loginImage {
+  width: 40%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.loginImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.loginForm {
+  width: 60%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px 10%;
+  box-sizing: border-box;
+}

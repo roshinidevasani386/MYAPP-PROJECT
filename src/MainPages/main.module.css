@@ -1,0 +1,1528 @@
+/* =========================================================
+   COMMON
+========================================================= */
+
+.primaryButton {
+  display: inline-block;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  background: #0b5ed7;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.primaryButton:hover {
+  background: #084298;
+}
+
+
+/* =========================================================
+   HOME PAGE
+========================================================= */
+
+.homePage {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* =========================================================
+   HOME CAROUSEL
+========================================================= */
+
+.carousel {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.carouselContainer {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.carouselImage {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+
+/* Dark layer over image */
+
+.carouselContainer::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  pointer-events: none;
+}
+
+
+/* Text on carousel */
+
+.carouselContent {
+  position: absolute;
+  z-index: 2;
+
+  top: 50%;
+  left: 8%;
+
+  transform: translateY(-50%);
+
+  max-width: 550px;
+
+  color: #ffffff;
+}
+
+.carouselContent h1 {
+  margin: 0 0 15px;
+
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.carouselContent p {
+  margin: 0 0 25px;
+
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+
+/* Carousel appointment button */
+
+.carouselButton {
+  display: inline-block;
+
+  padding: 13px 26px;
+
+  border-radius: 6px;
+
+  background: #0b5ed7;
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  transition: 0.3s ease;
+}
+
+.carouselButton:hover {
+  background: #084298;
+}
+
+
+/* =========================================================
+   CAROUSEL ARROWS
+========================================================= */
+
+.carouselArrow {
+  position: absolute;
+
+  top: 50%;
+  z-index: 3;
+
+  transform: translateY(-50%);
+
+  width: 45px;
+  height: 45px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: rgba(0, 0, 0, 0.45);
+
+  color: #ffffff;
+
+  font-size: 22px;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.carouselArrow:hover {
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.carouselArrowLeft {
+  left: 20px;
+}
+
+.carouselArrowRight {
+  right: 20px;
+}
+
+
+/* =========================================================
+   CAROUSEL DOTS
+========================================================= */
+
+.carouselDots {
+  position: absolute;
+
+  z-index: 3;
+
+  bottom: 20px;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  display: flex;
+
+  gap: 8px;
+}
+
+.carouselDot {
+  width: 11px;
+  height: 11px;
+
+  padding: 0;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  opacity: 0.6;
+
+  cursor: pointer;
+}
+
+.carouselDotActive {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+
+/* =========================================================
+   SECTION TITLE
+========================================================= */
+
+.sectionTitle {
+  max-width: 900px;
+
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.sectionTitle h2 {
+  margin: 0 0 15px;
+
+  font-size: 34px;
+
+  color: #123c69;
+}
+
+.sectionTitle p {
+  margin: 0;
+
+  font-size: 17px;
+
+  line-height: 1.7;
+
+  color: #555555;
+}
+
+
+/* =========================================================
+   ABOUT US
+========================================================= */
+
+.aboutSection {
+  width: 100%;
+
+  padding: 70px 8%;
+
+  box-sizing: border-box;
+
+  background: #ffffff;
+}
+
+
+/* =========================================================
+   HOME TREATMENTS
+========================================================= */
+
+.homeTreatmentSection {
+  width: 100%;
+
+  padding: 70px 8%;
+
+  box-sizing: border-box;
+
+  background: #f5f9fd;
+}
+
+.homeTreatmentCards {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 25px;
+
+  max-width: 1200px;
+
+  margin: 45px auto 30px;
+}
+
+.homeTreatmentCard {
+  padding: 25px;
+
+  background: #ffffff;
+
+  border-radius: 10px;
+
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+
+  text-align: center;
+
+  transition: 0.3s ease;
+}
+
+.homeTreatmentCard:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 7px 18px rgba(0, 0, 0, 0.12);
+}
+
+.homeTreatmentCard h3 {
+  margin: 0 0 12px;
+
+  color: #123c69;
+
+  font-size: 20px;
+}
+
+.homeTreatmentCard p {
+  margin: 0;
+
+  color: #666666;
+
+  line-height: 1.6;
+}
+
+.viewTreatment {
+  text-align: center;
+}
+.homeTreatmentImage {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 15px;
+}
+
+
+/* =========================================================
+   HOME APPOINTMENT
+========================================================= */
+
+.homeAppointment {
+  width: 100%;
+
+  padding: 65px 8%;
+
+  box-sizing: border-box;
+
+  text-align: center;
+
+  background: #123c69;
+
+  color: #ffffff;
+}
+
+.homeAppointment h2 {
+  margin: 0 0 12px;
+
+  font-size: 32px;
+}
+
+.homeAppointment p {
+  margin: 0 0 25px;
+
+  font-size: 17px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 992px) {
+
+  .carouselContainer {
+    height: 430px;
+  }
+
+  .carouselContent {
+    left: 6%;
+    right: 6%;
+  }
+
+  .carouselContent h1 {
+    font-size: 38px;
+  }
+
+  .carouselContent p {
+    font-size: 18px;
+  }
+
+  .homeTreatmentCards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .carouselContainer {
+    height: 400px;
+  }
+
+  .carouselContent {
+    left: 25px;
+    right: 25px;
+  }
+
+  .carouselContent h1 {
+    font-size: 30px;
+  }
+
+  .carouselContent p {
+    font-size: 16px;
+  }
+
+  .carouselArrow {
+    width: 38px;
+    height: 38px;
+
+    font-size: 18px;
+  }
+
+  .carouselArrowLeft {
+    left: 10px;
+  }
+
+  .carouselArrowRight {
+    right: 10px;
+  }
+
+  .aboutSection,
+  .homeTreatmentSection,
+  .homeAppointment {
+    padding: 50px 20px;
+  }
+
+  .sectionTitle h2 {
+    font-size: 28px;
+  }
+
+  .homeTreatmentCards {
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+
+    margin-top: 30px;
+  }
+}
+/* =========================================================
+   TREATMENTS PAGE
+========================================================= */
+/* =========================================
+   TREATMENTS PAGE
+========================================= */
+
+.treatmentsPage {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background: #ffffff;
+}
+
+.treatmentsHeader {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 50px 30px;
+  text-align: center;
+  background: #f7faff;
+}
+
+.treatmentsHeader h1 {
+  margin: 0 0 12px;
+  color: #123c69;
+  font-size: 36px;
+}
+
+.treatmentsHeader p {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #666666;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* Main treatment area */
+
+.treatmentsContainer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 30px;
+  box-sizing: border-box;
+}
+
+/* Treatment cards */
+
+.treatmentsCards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+  box-sizing: border-box;
+}
+
+.treatmentsCard {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  background: #ffffff;
+  border: 1px solid #dfe7ef;
+  border-radius: 10px;
+
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+
+  cursor: pointer;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.treatmentsCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.14);
+}
+
+/* Treatment image */
+
+.treatmentImage {
+  width: 100%;
+  height: 200px;
+  display: block;
+
+  object-fit: cover;
+
+  box-sizing: border-box;
+}
+
+/* Treatment content */
+
+.treatmentCardContent {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.treatmentCardContent h3 {
+  margin: 0 0 12px;
+
+  color: #123c69;
+  font-size: 20px;
+}
+
+.treatmentCardContent p {
+  min-height: 55px;
+  margin: 0 0 20px;
+
+  color: #666666;
+  font-size: 15px;
+  line-height: 1.6;
+
+  overflow-wrap: break-word;
+}
+
+/* Buttons */
+
+.primaryButton {
+  display: inline-block;
+
+  padding: 11px 20px;
+
+  background: #0b5ed7;
+  color: #ffffff;
+
+  border: none;
+  border-radius: 6px;
+
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  box-sizing: border-box;
+
+  transition: 0.3s ease;
+}
+
+.primaryButton:hover {
+  background: #084298;
+  transform: translateY(-2px);
+}
+
+/* Back button */
+
+.backButton {
+  display: inline-block;
+
+  margin-bottom: 30px;
+  padding: 10px 18px;
+
+  background: #123c69;
+  color: #ffffff;
+
+  border: none;
+  border-radius: 6px;
+
+  cursor: pointer;
+
+  font-size: 14px;
+}
+
+.backButton:hover {
+  background: #0b5ed7;
+}
+
+/* Selected treatment */
+
+.selectedTreatmentInfo {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 40px;
+
+  padding: 30px;
+
+  box-sizing: border-box;
+
+  background: #f7faff;
+
+  border-radius: 10px;
+  border: 1px solid #dfe7ef;
+}
+
+.selectedTreatmentImage {
+  width: 100%;
+  max-width: 700px;
+  height: 300px;
+
+  display: block;
+
+  margin: 0 auto 25px;
+
+  object-fit: cover;
+
+  border-radius: 8px;
+}
+
+.selectedTreatmentInfo h2 {
+  margin: 0 0 12px;
+
+  color: #123c69;
+  font-size: 28px;
+}
+
+.selectedTreatmentInfo p {
+  margin: 0;
+
+  color: #666666;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* Sub treatment heading */
+
+.subTreatmentHeading {
+  margin: 0 0 25px;
+
+  color: #123c69;
+  font-size: 28px;
+  text-align: center;
+}
+
+/* Sub treatment cards */
+
+.subTreatmentCards {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 25px;
+
+  box-sizing: border-box;
+}
+
+.subTreatmentCard {
+  width: 100%;
+  min-width: 0;
+
+  padding: 25px;
+
+  box-sizing: border-box;
+
+  background: #ffffff;
+
+  border: 1px solid #dfe7ef;
+  border-radius: 10px;
+
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.subTreatmentCard:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.14);
+}
+
+.subTreatmentCard h3 {
+  margin: 0 0 12px;
+
+  color: #123c69;
+  font-size: 20px;
+}
+
+.subTreatmentCard p {
+  margin: 0 0 20px;
+
+  color: #666666;
+  line-height: 1.6;
+
+  overflow-wrap: break-word;
+}
+
+/* Description */
+
+.descriptionCard {
+  width: 100%;
+  max-width: 900px;
+
+  margin: 0 auto;
+
+  padding: 35px;
+
+  box-sizing: border-box;
+
+  background: #ffffff;
+
+  border: 1px solid #dfe7ef;
+  border-radius: 10px;
+
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.descriptionCard h2 {
+  margin: 0 0 25px;
+
+  color: #123c69;
+  font-size: 30px;
+}
+
+.descriptionContent h3 {
+  margin: 0 0 10px;
+
+  color: #123c69;
+  font-size: 20px;
+}
+
+.descriptionContent p {
+  margin: 0;
+
+  color: #666666;
+
+  font-size: 16px;
+  line-height: 1.8;
+
+  overflow-wrap: break-word;
+}
+
+/* No data */
+
+.noTreatmentMessage {
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 40px;
+
+  text-align: center;
+
+  background: #f7faff;
+
+  border-radius: 10px;
+
+  color: #666666;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1000px) {
+  .treatmentsCards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .subTreatmentCards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .treatmentsContainer {
+    padding: 35px 20px;
+  }
+
+  .treatmentsHeader {
+    padding: 40px 20px;
+  }
+
+  .treatmentsHeader h1 {
+    font-size: 30px;
+  }
+
+  .treatmentsCards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .subTreatmentCards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .treatmentImage {
+    height: 220px;
+  }
+
+  .selectedTreatmentInfo {
+    padding: 20px;
+  }
+
+  .selectedTreatmentImage {
+    height: 230px;
+  }
+
+  .descriptionCard {
+    padding: 25px 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .treatmentsContainer {
+    padding: 30px 15px;
+  }
+
+  .treatmentsHeader {
+    padding: 35px 15px;
+  }
+
+  .treatmentCardContent {
+    padding: 18px;
+  }
+
+  .treatmentImage {
+    height: 200px;
+  }
+
+  .selectedTreatmentImage {
+    height: 200px;
+  }
+}
+
+/* Prevent horizontal scrolling */
+html,
+body,
+#root {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   BOOK APPOINTMENT PAGE
+========================================================= */
+
+.appointmentPage {
+  width: 100%;
+  min-height: 70vh;
+  padding-bottom: 60px;
+  background: #ffffff;
+}
+
+
+/* ================= HEADER ================= */
+
+.appointmentHeader {
+  width: 100%;
+  padding: 55px 8%;
+  box-sizing: border-box;
+  text-align: center;
+  background: #f5f9fd;
+}
+
+.appointmentHeader h1 {
+  margin: 0 0 12px;
+  color: #123c69;
+  font-size: 38px;
+}
+
+.appointmentHeader p {
+  margin: 0;
+  color: #555555;
+  font-size: 17px;
+}
+
+
+/* ================= FORM CONTAINER ================= */
+
+.appointmentContainer {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px 30px;
+  box-sizing: border-box;
+}
+
+
+/* ================= FORM CARD ================= */
+
+.appointmentCard {
+  padding: 40px;
+  background: #ffffff;
+  border: 1px solid #e1e8ef;
+  border-radius: 10px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ================= FORM GRID ================= */
+
+.appointmentGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+
+/* ================= INPUT GROUP ================= */
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputGroup label {
+  margin-bottom: 8px;
+  color: #123c69;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.inputGroup input,
+.inputGroup select {
+  width: 100%;
+  height: 45px;
+  padding: 0 12px;
+  box-sizing: border-box;
+
+  border: 1px solid #ccd6e0;
+  border-radius: 6px;
+
+  background: #ffffff;
+  color: #333333;
+
+  font-size: 15px;
+  outline: none;
+}
+
+.inputGroup input:focus,
+.inputGroup select:focus {
+  border-color: #0b5ed7;
+  box-shadow: 0 0 0 2px rgba(11, 94, 215, 0.1);
+}
+
+
+/* ================= ERROR ================= */
+
+.error {
+  margin-top: 6px;
+  color: #dc3545;
+  font-size: 13px;
+}
+
+
+/* ================= SUCCESS / ERROR MESSAGE ================= */
+
+.appointmentMessage {
+  margin-top: 25px;
+  padding: 14px;
+  border-radius: 6px;
+
+  background: #eef7ee;
+  color: #237b35;
+
+  text-align: center;
+  font-size: 15px;
+}
+
+
+/* ================= BUTTON ================= */
+
+.appointmentButtonContainer {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.appointmentButton {
+  padding: 13px 30px;
+
+  border: none;
+  border-radius: 6px;
+
+  background: #0b5ed7;
+  color: #ffffff;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.appointmentButton:hover {
+  background: #084298;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 700px) {
+
+  .appointmentHeader {
+    padding: 40px 20px;
+  }
+
+  .appointmentHeader h1 {
+    font-size: 30px;
+  }
+
+  .appointmentContainer {
+    padding: 35px 20px;
+  }
+
+  .appointmentCard {
+    padding: 25px;
+  }
+
+  .appointmentGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+/* =========================================================
+   ADD YOUR BUSINESS PAGE
+========================================================= */
+
+.businessPage {
+  width: 100%;
+  min-height: 70vh;
+  padding-bottom: 60px;
+  background: #ffffff;
+}
+
+
+/* ================= HEADER ================= */
+
+.businessHeader {
+  width: 100%;
+  padding: 55px 8%;
+  box-sizing: border-box;
+  text-align: center;
+  background: #f5f9fd;
+}
+
+.businessHeader h1 {
+  margin: 0 0 12px;
+  color: #123c69;
+  font-size: 38px;
+}
+
+.businessHeader p {
+  margin: 0;
+  color: #555555;
+  font-size: 17px;
+}
+
+
+/* ================= CONTAINER ================= */
+
+.businessContainer {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px 30px;
+  box-sizing: border-box;
+}
+
+
+/* ================= FORM CARD ================= */
+
+.businessCard {
+  padding: 40px;
+  background: #ffffff;
+  border: 1px solid #e1e8ef;
+  border-radius: 10px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ================= GRID ================= */
+
+.businessGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+
+/* ================= FULL WIDTH INPUT ================= */
+
+.businessFullInput {
+  margin-top: 25px;
+}
+
+
+/* ================= TEXTAREA ================= */
+
+.inputGroup textarea {
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+
+  border: 1px solid #ccd6e0;
+  border-radius: 6px;
+
+  background: #ffffff;
+  color: #333333;
+
+  font-family: inherit;
+  font-size: 15px;
+
+  resize: vertical;
+  outline: none;
+}
+
+.inputGroup textarea:focus {
+  border-color: #0b5ed7;
+  box-shadow: 0 0 0 2px rgba(11, 94, 215, 0.1);
+}
+
+
+/* ================= MESSAGE ================= */
+
+.businessMessage {
+  margin-top: 25px;
+  padding: 14px;
+
+  border-radius: 6px;
+
+  background: #eef7ee;
+  color: #237b35;
+
+  text-align: center;
+  font-size: 15px;
+}
+
+
+/* ================= BUTTON ================= */
+
+.businessButtonContainer {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.businessButton {
+  padding: 13px 30px;
+
+  border: none;
+  border-radius: 6px;
+
+  background: #0b5ed7;
+  color: #ffffff;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.businessButton:hover {
+  background: #084298;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 700px) {
+
+  .businessHeader {
+    padding: 40px 20px;
+  }
+
+  .businessHeader h1 {
+    font-size: 30px;
+  }
+
+  .businessContainer {
+    padding: 35px 20px;
+  }
+
+  .businessCard {
+    padding: 25px;
+  }
+
+  .businessGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+/* =========================================================
+   REACH US PAGE
+========================================================= */
+
+.reachUsPage {
+  width: 100%;
+  min-height: 70vh;
+  padding-bottom: 0;
+  background: #ffffff;
+}
+
+
+/* ================= HEADER ================= */
+
+.reachUsHeader {
+  width: 100%;
+  padding: 55px 8%;
+  box-sizing: border-box;
+
+  text-align: center;
+
+  background: #f5f9fd;
+}
+
+.reachUsHeader h1 {
+  margin: 0 0 12px;
+
+  color: #123c69;
+
+  font-size: 38px;
+}
+
+.reachUsHeader p {
+  margin: 0;
+
+  color: #555555;
+
+  font-size: 17px;
+}
+
+
+/* ================= CONTACT ================= */
+
+.contactSection {
+  width: 100%;
+  max-width: 1100px;
+
+  margin: 0 auto;
+
+  padding: 50px 30px;
+
+  box-sizing: border-box;
+}
+
+.contactCard {
+  max-width: 800px;
+
+  margin: 0 auto;
+
+  padding: 35px;
+
+  border: 1px solid #e1e8ef;
+  border-radius: 10px;
+
+  background: #ffffff;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+
+  text-align: center;
+}
+
+.contactCard h2 {
+  margin: 0 0 30px;
+
+  color: #123c69;
+
+  font-size: 28px;
+}
+
+.contactItem {
+  display: inline-block;
+
+  width: 30%;
+
+  vertical-align: top;
+}
+
+.contactItem strong {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #123c69;
+
+  font-size: 16px;
+}
+
+.contactItem p {
+  margin: 0;
+
+  color: #555555;
+
+  line-height: 1.6;
+}
+
+
+/* ================= LOCATIONS ================= */
+
+.locationSection {
+  width: 100%;
+
+  padding: 60px 8%;
+
+  box-sizing: border-box;
+
+  background: #f5f9fd;
+}
+
+.locationGrid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 22px;
+
+  max-width: 1200px;
+
+  margin: 40px auto 0;
+}
+
+.locationCard {
+  padding: 25px;
+
+  background: #ffffff;
+
+  border: 1px solid #e1e8ef;
+
+  border-radius: 10px;
+
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+
+  transition: 0.3s ease;
+}
+
+.locationCard:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.locationCard h3 {
+  margin: 0 0 22px;
+
+  color: #123c69;
+
+  font-size: 21px;
+}
+
+.locationDetail {
+  margin-bottom: 15px;
+}
+
+.locationDetail:last-child {
+  margin-bottom: 0;
+}
+
+.locationDetail strong {
+  display: block;
+
+  margin-bottom: 4px;
+
+  color: #123c69;
+
+  font-size: 14px;
+}
+
+.locationDetail p {
+  margin: 0;
+
+  color: #555555;
+
+  line-height: 1.5;
+
+  font-size: 14px;
+}
+
+
+/* ================= EMPTY LOCATIONS ================= */
+
+.noLocations {
+  width: 100%;
+
+  padding: 40px;
+
+  box-sizing: border-box;
+
+  text-align: center;
+
+  color: #666666;
+}
+
+
+/* ================= BOTTOM SECTION ================= */
+
+.reachUsBottom {
+  width: 100%;
+
+  padding: 60px 8%;
+
+  box-sizing: border-box;
+
+  text-align: center;
+
+  background: #123c69;
+
+  color: #ffffff;
+}
+
+.reachUsBottom h2 {
+  margin: 0 0 12px;
+
+  font-size: 32px;
+}
+
+.reachUsBottom p {
+  margin: 0 0 25px;
+
+  font-size: 17px;
+
+  line-height: 1.6;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1000px) {
+
+  .locationGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contactItem {
+    width: 32%;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .reachUsHeader {
+    padding: 40px 20px;
+  }
+
+  .reachUsHeader h1 {
+    font-size: 30px;
+  }
+
+  .contactSection {
+    padding: 35px 20px;
+  }
+
+  .contactCard {
+    padding: 25px;
+  }
+
+  .contactItem {
+    display: block;
+
+    width: 100%;
+
+    margin-bottom: 20px;
+  }
+
+  .contactItem:last-child {
+    margin-bottom: 0;
+  }
+
+  .locationSection {
+    padding: 50px 20px;
+  }
+
+  .locationGrid {
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+  }
+
+  .reachUsBottom {
+    padding: 50px 20px;
+  }
+}

@@ -1,0 +1,233 @@
+/* =========================================================
+   HEADER
+========================================================= */
+
+.header {
+  width: 100%;
+  min-height: 80px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 35px;
+
+  box-sizing: border-box;
+
+  background: #163a59;
+border-bottom: 1px solid #0b1f33;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+
+  position: relative;
+  z-index: 1000;
+}
+
+
+/* =========================================================
+   LOGO SECTION
+========================================================= */
+
+.logoSection {
+  display: flex;
+  align-items: center;
+
+  flex-shrink: 0;
+}
+
+.logoLink {
+  display: flex;
+  align-items: center;
+
+  text-decoration: none;
+}
+
+.logo {
+  width: 155px;
+  height: auto;
+
+  display: block;
+
+  object-fit: contain;
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.navbar {
+  display: flex;
+  align-items: center;
+
+  gap: 28px;
+
+  margin-left: auto;
+}
+
+
+/* =========================================================
+   NAVIGATION LINKS
+========================================================= */
+
+.navLink {
+  position: relative;
+
+  padding: 8px 0;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  white-space: nowrap;
+
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+
+/* Hover */
+
+.navLink:hover {
+  color: #dbeafe;
+
+  transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   ACTIVE LINK
+========================================================= */
+
+.active {
+  color: #ffffff;
+}
+
+
+/* Active underline */
+
+.active::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  right: 0;
+
+  bottom: 0;
+
+  height: 2px;
+
+  background: #ffffff;
+
+  border-radius: 2px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+  .header {
+    min-height: 80px;
+
+    padding: 15px 25px;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+  }
+
+
+  .navbar {
+    width: 100%;
+
+    justify-content: center;
+
+    margin-left: 0;
+
+    gap: 22px;
+
+    flex-wrap: wrap;
+  }
+
+
+  .navLink {
+    font-size: 15px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .header {
+    padding: 15px 20px;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 15px;
+  }
+
+
+  .logo {
+    width: 140px;
+  }
+
+
+  .navbar {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 12px 18px;
+  }
+
+
+  .navLink {
+    font-size: 14px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+  .header {
+    padding: 12px 15px;
+  }
+
+
+  .logo {
+    width: 125px;
+  }
+
+
+  .navbar {
+    gap: 10px 14px;
+  }
+
+
+  .navLink {
+    font-size: 13px;
+  }
+
+}

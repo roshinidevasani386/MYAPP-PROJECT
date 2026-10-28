@@ -1,0 +1,47 @@
+.footer {
+  background: #0b1f33;
+  color: white;
+  margin-top: 50px;
+}
+
+.footerContainer {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+  gap: 50px;
+  padding: 50px 8%;
+}
+
+.footerSection {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footerSection h3 {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.footerSection p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.footerSection a {
+  color: white;
+  text-decoration: none;
+}
+
+.footerSection a:hover {
+  color: #4db8ff;
+}
+
+.bottom {
+  text-align: center;
+  padding: 15px;
+  border-top: 1px solid #33495c;
+}
+
+.bottom p {
+  margin: 0;
+}

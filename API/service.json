@@ -1,0 +1,227 @@
+{
+  "treatments": [
+    {
+      "name": "General Surgery",
+      "description": "Treatment for common surgical conditions including abdominal, hernia, gallbladder, and other general surgical procedures.",
+      "id": "ycI6iI4-gEs"
+    },
+    {
+      "name": "Cardiac Surgery",
+      "description": "Advanced surgical treatment for heart-related conditions, including valve and coronary artery procedures.",
+      "id": "e_TCwHzlqaA"
+    },
+    {
+      "name": "Orthopedic Surgery",
+      "description": "Surgical treatment for bone, joint, muscle, ligament, and other orthopedic conditions.",
+      "id": "1hkfCqRyAdI"
+    },
+    {
+      "name": "Neurosurgery",
+      "description": "Specialized surgical care for conditions affecting the brain, spine, and nervous system.",
+      "id": "lLOskq_fojw"
+    },
+    {
+      "name": "Pediatric Surgery",
+      "description": "Specialized surgical treatment and care for infants, children, and adolescents.",
+      "id": "66kRxrECg-s"
+    },
+    {
+      "name": "Cardiac Surgery",
+      "description": "Specialized surgical treatment for heart and blood vessel conditions.",
+      "id": "sQNGmZgJ3zU"
+    },
+    {
+      "name": "Orthopedic Surgery",
+      "description": "Treatment of bones, joints, muscles, ligaments and related conditions.",
+      "id": "60tTHATDklM"
+    },
+    {
+      "name": "Neurosurgery",
+      "description": "Surgical treatment for conditions affecting the brain, spine and nervous system.",
+      "id": "d1FW466DP2Q"
+    },
+    {
+      "name": "Plastic & Reconstructive Surgery",
+      "description": "Reconstructive and corrective surgical procedures for various conditions and injuries.",
+      "id": "UvtaRhSIHqk"
+    },
+    {
+      "name": "Laparoscopic Surgery",
+      "description": "Minimally invasive surgery performed through small incisions using a camera and specialized instruments.",
+      "id": "fSTKKofOHHo"
+    }
+  ],
+  "subTreatments": [
+    {
+      "treatmentId": "ycI6iI4-gEs",
+      "treatmentName": "General Surgery",
+      "name": "Appendicitis Surgery",
+      "description": "Surgical treatment for appendicitis condition.",
+      "id": "IKqQKfbHsck"
+    },
+    {
+      "treatmentId": "e_TCwHzlqaA",
+      "treatmentName": "Cardiac Surgery",
+      "name": "Heart Valve Surgery",
+      "description": "Surgery to repair or replace a damaged heart valve.",
+      "id": "jI75ickm3_8"
+    },
+    {
+      "treatmentId": "1hkfCqRyAdI",
+      "treatmentName": "Orthopedic Surgery",
+      "name": "Knee Replacement",
+      "description": "Surgery to replace a damaged knee joint with an artificial joint to improve movement and reduce pain.",
+      "id": "LCGCxosPkNw"
+    },
+    {
+      "treatmentId": "lLOskq_fojw",
+      "treatmentName": "Neurosurgery",
+      "name": "Brain Tumor Surgery",
+      "description": "Surgery performed to remove or treat certain tumors affecting the brain.",
+      "id": "zTNpq9mibxA"
+    },
+    {
+      "treatmentId": "66kRxrECg-s",
+      "treatmentName": "Pediatric Surgery",
+      "name": "Pediatric Fracture Surgery",
+      "description": "Surgical treatment used to stabilize and repair certain fractures in children.",
+      "id": "GZwD3IstEVU"
+    },
+    {
+      "treatmentId": "sQNGmZgJ3zU",
+      "treatmentName": "Cardiac Surgery",
+      "name": "Congenital Heart Surgery",
+      "description": "Surgical treatment for certain structural heart conditions present from birth.",
+      "id": "DZ04hmWYJkI"
+    },
+    {
+      "treatmentId": "60tTHATDklM",
+      "treatmentName": "Orthopedic Surgery",
+      "name": "Shoulder Surgery",
+      "description": "Surgical treatment for certain injuries and conditions affecting the shoulder joint.",
+      "id": "8eSs4PVj80M"
+    },
+    {
+      "treatmentId": "d1FW466DP2Q",
+      "treatmentName": "Neurosurgery",
+      "name": "Skull Surgery",
+      "description": "Surgery involving the skull to access or treat certain neurological conditions.",
+      "id": "4G1znLo7GJA"
+    },
+    {
+      "treatmentId": "UvtaRhSIHqk",
+      "treatmentName": "Plastic & Reconstructive Surgery",
+      "name": "Reconstructive Surgery",
+      "description": "Surgical procedures to restore the form and function of body parts affected by injury, disease, or congenital conditions.",
+      "id": "09sAab9urVE"
+    },
+    {
+      "treatmentId": "fSTKKofOHHo",
+      "treatmentName": "Laparoscopic Surgery",
+      "name": "Laparoscopic Appendectomy",
+      "description": "Minimally invasive surgery to remove the appendix through small abdominal incisions.",
+      "id": "mHhz1cXjQSA"
+    }
+  ],
+  "doctors": [
+    {
+      "name": "Dr.Roshini",
+      "specialization": "General Surgeon",
+      "experience": "8",
+      "phone": "8897988909",
+      "email": "roshini@gmail.com",
+      "id": "cF5tRwfSfbE"
+    },
+    {
+      "name": "Dr.Ravi",
+      "specialization": "Cardiac Surgeon",
+      "experience": "12",
+      "phone": "9997855929",
+      "email": "ravi@gmail.com",
+      "id": "sMN8C-pF_24"
+    },
+    {
+      "name": "Sneha",
+      "specialization": "Neurosurgeon",
+      "experience": "9",
+      "phone": "8897877909",
+      "email": "sneha@gmail.com",
+      "id": "bJaHgt6sQIs"
+    },
+    {
+      "name": "Dr.prasanna",
+      "specialization": "General Surgeon",
+      "experience": "7",
+      "phone": "8897877939",
+      "email": "prasanna@gmail.com",
+      "id": "TCKJ_J3kqjw"
+    }
+  ],
+  "locations": [
+    {
+      "name": "SurgiNova Hyderabad",
+      "address": "Road No.12, Banjara Hills",
+      "city": "Hyderabad",
+      "state": "Telangana",
+      "phone": "8897988909",
+      "id": "6sAeWNcN8l8"
+    },
+    {
+      "name": "SurgiNova Secunderabad",
+      "address": "MG Road, Near Paradise Circle",
+      "city": "Secunderabad",
+      "state": "Telangana",
+      "phone": "8897877909",
+      "id": "DTmRfWSae2o"
+    },
+    {
+      "name": "SurgiNova Care - Bengaluru",
+      "address": "100 Feet Road, Indiranagar",
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "phone": "9876543213",
+      "id": "xpa9ovMqLKg"
+    },
+    {
+      "name": "Name: SurgiNova Care - Chennai",
+      "address": "Anna Salai, Teynampet",
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "phone": "8897877939",
+      "id": "BMqZZBclkcA"
+    }
+  ],
+  "appointments": [
+    {
+      "id": "1",
+      "patientName": "Anjali Reddy",
+      "email": "anjali@gmail.com",
+      "phone": "9876543210",
+      "treatment": "General Surgery",
+      "doctor": "Dr. Rahul Sharma",
+      "date": "2026-10-10",
+      "time": "10:00 AM",
+      "status": "Pending"
+    },
+    {
+      "id": "2",
+      "patientName": "Rahul Kumar",
+      "email": "rahul@gmail.com",
+      "phone": "9876543211",
+      "treatment": "Cardiac Surgery",
+      "doctor": "Dr. Priya Reddy",
+      "date": "2026-10-12",
+      "time": "11:30 AM",
+      "status": "Confirmed"
+    }
+  ],
+  "businessRequests": [],
+  "admins": [
+    {
+      "username": "admin",
+      "email": "admin@gmail.com",
+      "password": "admin123",
+      "id": "Wo9d9Vt58eQ"
+    }
+  ]
+}
